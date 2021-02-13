@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      body
+      {
+          font-family: Helvetica;
+          background-color: aqua;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Tu peso en otro planeta</title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+
+    <p>En la tierra pesas distinto que en marte o jupiter</p>
+
+    <script type="text/javascript">
+
+      var pesoUsuario = prompt("Escribe tu peso en la tierra en kg: ");
+      var peso = parseFloat(pesoUsuario);
+      var gm = 3.7;
+      var gt = 9.8;
+      var gj = 24.8;
+
+      var pesogm;
+      pesogm = (peso * gm) / gt;
+      pesogm = parseFloat(pesogm);
+      //var pesogj = (peso * gj) / gt;
+
+        document.write("Su peso en marte es de: <strong>"+ pesogm +"</strong> kg");
+    </script>
+  </body>
+</html>

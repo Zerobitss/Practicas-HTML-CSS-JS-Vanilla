@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metacharset="utf-8">
+    <title>BANCO ARGENTINA</title>
+</head>
+<body>
+    <h1>BANCO ARGENTINA</h1>
+    <p>
+        <imgsrc="bank.png" />
+    </p>
+
+    <form>
+        <p> Digite el usuario: <inputtype="text"id= "usuario"></p>
+        <p> Digite la clave: <inputtype="number"id= "passUsuario" /></p>
+        <p><inputtype="button"value= "Aceptar" id="btnAceptar" /></p>
+
+    </form>
+    <hr>
+
+    <p>Seleccione banco de origen:
+		<select name = "bOrigen" id="bOrigen">
+            <option value=""> Despliegue la lista</option>
+			<option value= "1"> Banco Argentina </option>
+			<option value= "2"> Banco Galicia </option>
+			<option value= "3"> Banco BBVA </option>
+			<option value= "4"> Banco Córdoba </option>
+		</select>
+    </p>
+
+    <p>Número de cuenta Origen (del 1 al 5. Un valor diferente se tendrá como una cuenta inválida):
+        <inputtype="number"id="ctaOrigen"min="1"max="5"/></p>
+
+
+    <hr>
+
+    <p>Seleccione banco de Destino
+		<select name= "bDestino" id="bDestino">
+            <option value=""> Despliegue la lista</option>
+			<option value= "5"> Banco Argentina </option>
+			<option value= "6"> Banco Galicia </option>
+			<option value= "7"> Banco BBVA </option>
+			<option value= "8"> Banco Córdoba </option>
+		</select>
+	</p>
+
+	<p>Número de cuenta Destino (del 1 al 5. Un valor diferente se tendrá como una cuenta inválida):
+        <inputtype="number"id="ctaDestino"min="1"max="5"/></p>
+
+    <hr>
+
+    <pid= saldo_actual>
+  </p>
+
+    <p>Valor a transferir: <inputtype="number"id="monto"/></p>
+
+    <p>Hora actual de transferencia: <spanid="hora"></span></p>
+
+    <p><inputtype="button"value="TRANSFERIR..."id="btnTransferir"/></p>
+
+
+    <script src= "bank.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      body
+      {
+        background-color: #AAAAFF;
+        color: black;
+        font-family: Helvetica;
+      }
+    </style>
+  <meta charset="utf-8">
+    <title>Juego de Culpable o no</title>
+  </head>
+  <body>
+      <h1>Saber si eres culpable o no</h1>
+      <p>Aqui se hara tu sentencia</p>
+<script type="text/javascript">
+var nombre = prompt("Escriba su nombre: ");
+var opcionUsuario = parseInt(prompt("Elige entre \n Opcion 1 \n Opcion 2"));
+var usuario = parseInt(opcionUsuario)
+
+  if (usuario == 1)
+  {
+      document.write("Eres culpable debes ir a la carcel " + nombre);
+  }
+  else if (usuario == 2)
+  {
+      document.write("No eres culpable puedes irte " + nombre);
+
+  }
+  else
+  {
+    document.write("Debes elegir entre la opcion 1 y 2 " + nombre);
+  }
+
+</script>
+  </body>
+</html>
